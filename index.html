@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adega Lounge</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Adega Lounge</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#bebidas">Bebidas</a></li>
+          <li><a href="#ambiente">Ambiente</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Experiências únicas em cada taça</h2>
+      <p>Drinks, vinhos e um ambiente inesquecível</p>
+      <a href="#contato" class="btn">Reservar Mesa</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>O Adega Lounge é o lugar ideal para quem aprecia boas bebidas em um ambiente sofisticado e acolhedor. Com uma carta variada e atendimento premium, oferecemos experiências memoráveis todas as noites.</p>
+    </div>
+  </section>
+
+  <section id="bebidas" class="section">
+    <div class="container">
+      <h2>Cartela de Bebidas</h2>
+      <div class="grid">
+        <div class="card"><img src="bebida1.jpg" alt=""><h3>Malbec Argentino</h3><p>Vinho tinto seco - Argentina</p></div>
+        <div class="card"><img src="bebida2.jpg" alt=""><h3>Negroni Clássico</h3><p>Drink italiano com gin</p></div>
+        <div class="card"><img src="bebida3.jpg" alt=""><h3>Espumante Rosé</h3><p>Frutado e refrescante</p></div>
+        <div class="card"><img src="bebida4.jpg" alt=""><h3>Whisky 12 anos</h3><p>Notas amadeiradas e suaves</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ambiente" class="section">
+    <div class="container">
+      <h2>Nosso Ambiente</h2>
+      <div class="galeria">
+        <img src="ambiente1.jpg" alt="Ambiente 1" />
+        <img src="ambiente2.jpg" alt="Ambiente 2" />
+        <img src="ambiente3.jpg" alt="Ambiente 3" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato & Reservas</h2>
+      <form class="formulario">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="tel" placeholder="Telefone para contato" required />
+        <input type="date" required />
+        <input type="number" placeholder="Número de pessoas" required />
+        <textarea placeholder="Mensagem adicional (opcional)"></textarea>
+        <button type="submit">Enviar Reserva</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Adega Lounge - Todos os direitos reservados.</p>
+      <div class="footer-icons">
+        <a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://maps.google.com?q=Rua+Exemplo,+123,+Cidade" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.section', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      interval: 200
+    });
+  </script>
+</body>
+</html>
